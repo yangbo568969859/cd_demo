@@ -1,0 +1,15 @@
+matrix:
+  include: 
+    - os linux
+      language: android
+      dist: trusty
+      licence
+os:
+  - osx
+install:
+  - git clone https://github.com/flutter/flutter.git
+  - export PATH="$PATH:`pwd`/flutter/bin"
+
+language: dart
+script:
+  - flutter doctor && flutter test
