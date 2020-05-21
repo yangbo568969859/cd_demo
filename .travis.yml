@@ -68,6 +68,15 @@
 #   - export PATH="$PATH:`pwd`/flutter/bin"
 
 
-language: dart
+# language: dart
+# script: 
+#   - dart main.dart
+
+os:
+  - osx
+install:
+  - git clone https://github.com/flutter/flutter.git
+  - export PATH="$PATH:`pwd`/flutter/bin"
+
 script: 
-  - dart main.dart
+  - flutter doctor && flutter test
