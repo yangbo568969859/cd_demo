@@ -86,6 +86,7 @@ matrix:
   include: 
     -os: linux
       language: android
+      dist: trusty
       licenses: 
         - 'android-sdk-preview-license-.+' 
         - 'android-sdk-license-.+' 
